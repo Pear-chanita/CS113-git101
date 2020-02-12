@@ -1,0 +1,12 @@
+git 
+1. ตรวจสอบว่า Git ใช้งานได้หรือไม่ git --version
+2. สร้าง directory ที่จะเก็บงาน 
+3. Initialize git repository -> พิม git init
+4. สร้างไฟล์
+5. ตรวจสอบสถานะของไฟล์ -> git status
+6. แอดไฟล์ -> git add แล้วตรวสอบสถานะอีกครั้ง
+7. ตั้งค่าชื่อและอีเมลเพื่อระบุตัวผู้ commit -> git config user.name "Your Name"
+                                 git config user.email "yourmail@ku.th"
+8. Commit ไฟล์ เพื่อเก็บ Version/Snapshot/Checkpoint -> git commit -m "Add a.txt"
+9. ดู Checkpoint ทั้งหมด -> git log --all --decorate --oneline --graph
+10. เชื่อม local repository กับ github -> git remote add <ชื่อ remote เช่น origin> <git url>
