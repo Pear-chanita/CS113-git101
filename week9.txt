@@ -1,0 +1,21 @@
+branch
+1. clone งานจากคราวที่แล้ว -> git clone <git-url>
+2. สร้าง branch -> git branch <branch-name> เพื่อไม่ให้ปนกัน
+3.ตรวจสอบ branch -> git branch *อยู่หน้าbranchปัจจุบัน
+4. เปลี่ยน branch ด้วยคำสั่ง -> git checkout <branchที่ต้องการ>
+5. ตรวจสอบ branch อีกครั้ง
+
+Merge Branch แบบไม่มี Conflict
+1.เพิ่มไฟล์ ในbranchที่ต้องการ เพิ่มไฟล์master ในbranch master โดยสังเกตดูจะแยกกัน 
+2.ใช้ git log adog ดู Checkpoint ทั้งหมด
+3.push master ขึ้น githug ใช้ git log adog ดู Checkpoint ทั้งหมด 
+4.push <ที่ต้องการ> ขึ้น githug ใช้ git log adog ดู Checkpoint ทั้งหมด 
+5.merge โดยให้งาน <ที่ต้องการ>และmasterรวมกัน โดยเปลี่ยนไปที่branchปลายทาง -> git checkout master
+6.รวม Branch (merge) ที่ต้องการ ให้ไปอยู่ใน master -> git merge <ที่ต้องการ>
+7.push master ขึ้น github -> git push origin master
+
+การ Pull แบบไม่มี Conflict
+1.ให้ clone git repository มาไว้อีกเครื่องหนึ่ง หรือ directory ใหม่
+2.เพิ่มไฟล์ new-1.txt ใน directory ใหม่ (git102) แล้ว push ไปที่ github
+3. กลับมาที่เครื่องเก่า หรือ directory เก่า แล้ว pull การเปลี่ยนแปลงลงมาที่ local repository
+
